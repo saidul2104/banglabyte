@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="bn">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -9,10 +9,30 @@
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   .fade-in {
+     animation: fadeIn 2s ease-in-out;
+   }
+
+   @keyframes fadeIn {
+     0% { opacity: 0; }
+     100% { opacity: 1; }
+   }
+
+   .hover-grow:hover {
+     transform: scale(1.05);
+     transition: transform 0.3s ease-in-out;
+   }
+
+   .hover-shadow:hover {
+     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+     transition: box-shadow 0.3s ease-in-out;
+   }
+  </style>
  </head>
  <body class="font-roboto">
   <!-- Header -->
-  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center fade-in">
    <div class="flex items-center">
     <img alt="Logo of BanglaBYTE, a stylized representation of coding and Bengali script" class="mr-3" height="50" src="https://storage.googleapis.com/a1aa/image/6den26nb8xz7K63vqHdQdxrEOhwe7mRUOUuvzqQHieQBoY4nA.jpg" width="50"/>
     <h1 class="text-xl font-bold">
@@ -23,106 +43,106 @@
     <ul class="flex space-x-4">
      <li>
       <a class="hover:underline" href="#">
-       Home
+       হোম
       </a>
      </li>
      <li>
       <a class="hover:underline" href="#">
-       About
+       সম্পর্কে
       </a>
      </li>
      <li>
       <a class="hover:underline" href="#">
-       Problems
+       সমস্যা
       </a>
      </li>
      <li>
       <a class="hover:underline" href="#">
-       Contests
+       প্রতিযোগিতা
       </a>
      </li>
      <li>
       <a class="hover:underline" href="#">
-       Resources
+       সম্পদ
       </a>
      </li>
      <li>
       <a class="hover:underline" href="#">
-       Community
+       সম্প্রদায়
       </a>
      </li>
      <li>
       <a class="hover:underline" href="#">
-       Login/Sign Up
+       লগইন/সাইন আপ
       </a>
      </li>
     </ul>
    </nav>
   </header>
   <!-- Hero Section -->
-  <section class="bg-gray-100 text-center py-20">
+  <section class="bg-gray-100 text-center py-20 fade-in">
    <h2 class="text-4xl font-bold mb-4">
-    Unlock Your Coding Potential in Bengali!
+    বাংলায় আপনার কোডিং সম্ভাবনা উন্মোচন করুন!
    </h2>
-   <button class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg">
-    Start Learning Now
+   <button class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg hover-grow">
+    এখনই শেখা শুরু করুন
    </button>
    <div class="mt-10">
-    <img alt="Illustration of students engaging with coding or problem-solving" class="mx-auto" height="400" src="https://storage.googleapis.com/a1aa/image/P9KqcMHhiJqvAFQWMBj6wRRn9njVGfx2pG9Y6qHm71aBKGeTA.jpg" width="600"/>
+    <img alt="Illustration of students engaging with coding or problem-solving" class="mx-auto hover-grow" height="400" src="https://storage.googleapis.com/a1aa/image/P9KqcMHhiJqvAFQWMBj6wRRn9njVGfx2pG9Y6qHm71aBKGeTA.jpg" width="600"/>
    </div>
   </section>
   <!-- Features Section -->
-  <section class="py-20">
+  <section class="py-20 fade-in">
    <div class="container mx-auto text-center">
     <h3 class="text-3xl font-bold mb-10">
-     Key Features
+     মূল বৈশিষ্ট্য
     </h3>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <i class="fas fa-language text-4xl text-blue-600 mb-4">
       </i>
       <h4 class="text-xl font-bold mb-2">
-       Bengali-based Problem Solving
+       বাংলাভিত্তিক সমস্যা সমাধান
       </h4>
       <p>
-       Learn and solve problems in your native language.
+       আপনার মাতৃভাষায় শিখুন এবং সমস্যা সমাধান করুন।
       </p>
      </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <i class="fas fa-clock text-4xl text-blue-600 mb-4">
       </i>
       <h4 class="text-xl font-bold mb-2">
-       Real-time Contests
+       রিয়েল-টাইম প্রতিযোগিতা
       </h4>
       <p>
-       Participate in contests with instant feedback.
+       তাত্ক্ষণিক প্রতিক্রিয়া সহ প্রতিযোগিতায় অংশগ্রহণ করুন।
       </p>
      </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <i class="fas fa-lock text-4xl text-blue-600 mb-4">
       </i>
       <h4 class="text-xl font-bold mb-2">
-       Secure Data Protection
+       নিরাপদ ডেটা সুরক্ষা
       </h4>
       <p>
-       Your data is safe with us.
+       আপনার ডেটা আমাদের সাথে নিরাপদ।
       </p>
      </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <i class="fas fa-code text-4xl text-blue-600 mb-4">
       </i>
       <h4 class="text-xl font-bold mb-2">
-       Multiple Programming Languages
+       একাধিক প্রোগ্রামিং ভাষা
       </h4>
       <p>
-       Support for various programming languages.
+       বিভিন্ন প্রোগ্রামিং ভাষার জন্য সমর্থন।
       </p>
      </div>
     </div>
    </div>
   </section>
   <!-- Footer -->
-  <footer class="bg-blue-600 text-white py-6">
+  <footer class="bg-blue-600 text-white py-6 fade-in">
    <div class="container mx-auto text-center">
     <div class="flex justify-center space-x-6 mb-4">
      <a href="#">
@@ -143,21 +163,21 @@
      </a>
     </div>
     <p>
-     © 2023 BanglaBYTE. All rights reserved.
+     © 2023 BanglaBYTE. সর্বস্বত্ব সংরক্ষিত।
     </p>
     <p>
      <a class="hover:underline" href="#">
-      Terms of Service
+      পরিষেবার শর্তাবলী
      </a>
      |
      <a class="hover:underline" href="#">
-      Contact Us
+      আমাদের সাথে যোগাযোগ করুন
      </a>
     </p>
    </div>
   </footer>
   <!-- Problems Page -->
-  <section class="py-20">
+  <section class="py-20 fade-in">
    <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
     <div class="flex items-center">
      <img alt="Logo of BanglaBYTE, a stylized representation of coding and Bengali script" class="mr-3" height="50" src="https://storage.googleapis.com/a1aa/image/6den26nb8xz7K63vqHdQdxrEOhwe7mRUOUuvzqQHieQBoY4nA.jpg" width="50"/>
@@ -169,37 +189,37 @@
      <ul class="flex space-x-4">
       <li>
        <a class="hover:underline" href="#">
-        Home
+        হোম
        </a>
       </li>
       <li>
        <a class="hover:underline" href="#">
-        About
+        সম্পর্কে
        </a>
       </li>
       <li>
        <a class="hover:underline" href="#">
-        Problems
+        সমস্যা
        </a>
       </li>
       <li>
        <a class="hover:underline" href="#">
-        Contests
+        প্রতিযোগিতা
        </a>
       </li>
       <li>
        <a class="hover:underline" href="#">
-        Resources
+        সম্পদ
        </a>
       </li>
       <li>
        <a class="hover:underline" href="#">
-        Community
+        সম্প্রদায়
        </a>
       </li>
       <li>
        <a class="hover:underline" href="#">
-        Login/Sign Up
+        লগইন/সাইন আপ
        </a>
       </li>
      </ul>
@@ -207,125 +227,125 @@
    </header>
    <div class="container mx-auto mt-10">
     <div class="flex justify-between items-center mb-6">
-     <input class="border p-2 rounded w-full max-w-md" placeholder="Search problems..." type="text"/>
+     <input class="border p-2 rounded w-full max-w-md" placeholder="সমস্যা অনুসন্ধান করুন..." type="text"/>
      <div class="ml-4">
       <select class="border p-2 rounded">
        <option>
-        All Levels
+        সব স্তর
        </option>
        <option>
-        Easy
+        সহজ
        </option>
        <option>
-        Medium
+        মাঝারি
        </option>
        <option>
-        Hard
+        কঠিন
        </option>
       </select>
       <select class="border p-2 rounded ml-2">
        <option>
-        All Categories
+        সব বিভাগ
        </option>
        <option>
-        Algorithms
+        অ্যালগরিদম
        </option>
        <option>
-        Data Structures
+        ডেটা স্ট্রাকচার
        </option>
       </select>
      </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <h4 class="text-xl font-bold mb-2">
-       Problem Title 1
+       ফিবোনাচি সংখ্যা
       </h4>
       <p class="mb-2">
-       Difficulty: Easy
+       কঠিন: সহজ
       </p>
       <p class="mb-4">
-       Brief description of the problem...
+       ফিবোনাচি সিরিজের n-তম সংখ্যা নির্ণয় করুন।
       </p>
       <button class="bg-blue-600 text-white px-4 py-2 rounded">
-       Solve Now
+       এখনই সমাধান করুন
       </button>
      </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <h4 class="text-xl font-bold mb-2">
-       Problem Title 2
+       বাইনারি সার্চ
       </h4>
       <p class="mb-2">
-       Difficulty: Medium
+       কঠিন: মাঝারি
       </p>
       <p class="mb-4">
-       Brief description of the problem...
+       একটি সাজানো অ্যারেতে একটি উপাদান খুঁজে বের করুন।
       </p>
       <button class="bg-blue-600 text-white px-4 py-2 rounded">
-       Solve Now
+       এখনই সমাধান করুন
       </button>
      </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <h4 class="text-xl font-bold mb-2">
-       Problem Title 3
+       গ্রাফ ট্রাভার্সাল
       </h4>
       <p class="mb-2">
-       Difficulty: Hard
+       কঠিন: কঠিন
       </p>
       <p class="mb-4">
-       Brief description of the problem...
+       একটি গ্রাফের সমস্ত নোড পরিদর্শন করুন।
       </p>
       <button class="bg-blue-600 text-white px-4 py-2 rounded">
-       Solve Now
+       এখনই সমাধান করুন
       </button>
      </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <h4 class="text-xl font-bold mb-2">
-       Problem Title 4
+       ম্যাট্রিক্স মাল্টিপ্লিকেশন
       </h4>
       <p class="mb-2">
-       Difficulty: Easy
+       কঠিন: সহজ
       </p>
       <p class="mb-4">
-       Brief description of the problem...
+       দুটি ম্যাট্রিক্সের গুণফল নির্ণয় করুন।
       </p>
       <button class="bg-blue-600 text-white px-4 py-2 rounded">
-       Solve Now
+       এখনই সমাধান করুন
       </button>
      </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <h4 class="text-xl font-bold mb-2">
-       Problem Title 5
+       স্ট্যাক ইমপ্লিমেন্টেশন
       </h4>
       <p class="mb-2">
-       Difficulty: Medium
+       কঠিন: মাঝারি
       </p>
       <p class="mb-4">
-       Brief description of the problem...
+       একটি স্ট্যাক ডেটা স্ট্রাকচার ইমপ্লিমেন্ট করুন।
       </p>
       <button class="bg-blue-600 text-white px-4 py-2 rounded">
-       Solve Now
+       এখনই সমাধান করুন
       </button>
      </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <h4 class="text-xl font-bold mb-2">
-       Problem Title 6
+       ডিপথ ফার্স্ট সার্চ
       </h4>
       <p class="mb-2">
-       Difficulty: Hard
+       কঠিন: কঠিন
       </p>
       <p class="mb-4">
-       Brief description of the problem...
+       একটি গ্রাফে ডিপথ ফার্স্ট সার্চ অ্যালগরিদম প্রয়োগ করুন।
       </p>
       <button class="bg-blue-600 text-white px-4 py-2 rounded">
-       Solve Now
+       এখনই সমাধান করুন
       </button>
      </div>
     </div>
    </div>
   </section>
   <!-- Contest Page -->
-  <section class="py-20">
+  <section class="py-20 fade-in">
    <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
     <div class="flex items-center">
      <img alt="Logo of BanglaBYTE, a stylized representation of coding and Bengali script" class="mr-3" height="50" src="https://storage.googleapis.com/a1aa/image/6den26nb8xz7K63vqHdQdxrEOhwe7mRUOUuvzqQHieQBoY4nA.jpg" width="50"/>
@@ -337,37 +357,37 @@
      <ul class="flex space-x-4">
       <li>
        <a class="hover:underline" href="#">
-        Home
+        হোম
        </a>
       </li>
       <li>
        <a class="hover:underline" href="#">
-        About
+        সম্পর্কে
        </a>
       </li>
       <li>
        <a class="hover:underline" href="#">
-        Problems
+        সমস্যা
        </a>
       </li>
       <li>
        <a class="hover:underline" href="#">
-        Contests
+        প্রতিযোগিতা
        </a>
       </li>
       <li>
        <a class="hover:underline" href="#">
-        Resources
+        সম্পদ
        </a>
       </li>
       <li>
        <a class="hover:underline" href="#">
-        Community
+        সম্প্রদায়
        </a>
       </li>
       <li>
        <a class="hover:underline" href="#">
-        Login/Sign Up
+        লগইন/সাইন আপ
        </a>
       </li>
      </ul>
@@ -375,123 +395,83 @@
    </header>
    <div class="container mx-auto mt-10">
     <h3 class="text-3xl font-bold mb-10 text-center">
-     Upcoming Contests
+     আসন্ন প্রতিযোগিতা
     </h3>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <h4 class="text-xl font-bold mb-2">
-       Contest Name 1
+       কোডিং চ্যালেঞ্জ ২০২৩
       </h4>
       <p class="mb-2">
-       Date: 2023-10-01
+       তারিখ: ৩০/১২/২৪
       </p>
       <p class="mb-2">
-       Time: 10:00 AM
+       সময়: সকাল ১০:০০
       </p>
       <p class="mb-4">
-       Duration: 2 hours
+       সময়কাল: ২ ঘন্টা
       </p>
       <button class="bg-blue-600 text-white px-4 py-2 rounded">
-       Register
+       নিবন্ধন করুন
       </button>
      </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <h4 class="text-xl font-bold mb-2">
-       Contest Name 2
+       অ্যালগরিদম প্রতিযোগিতা
       </h4>
       <p class="mb-2">
-       Date: 2023-10-15
+       তারিখ: ৩০/১২/২৪
       </p>
       <p class="mb-2">
-       Time: 2:00 PM
+       সময়: দুপুর ২:০০
       </p>
       <p class="mb-4">
-       Duration: 3 hours
+       সময়কাল: ৩ ঘন্টা
       </p>
       <button class="bg-blue-600 text-white px-4 py-2 rounded">
-       Register
+       নিবন্ধন করুন
       </button>
      </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <h4 class="text-xl font-bold mb-2">
-       Contest Name 3
+       ডেটা স্ট্রাকচার প্রতিযোগিতা
       </h4>
       <p class="mb-2">
-       Date: 2023-11-01
+       তারিখ: ৩০/১২/২৪
       </p>
       <p class="mb-2">
-       Time: 9:00 AM
+       সময়: সকাল ৯:০০
       </p>
       <p class="mb-4">
-       Duration: 1.5 hours
+       সময়কাল: ১.৫ ঘন্টা
       </p>
       <button class="bg-blue-600 text-white px-4 py-2 rounded">
-       Register
+       নিবন্ধন করুন
       </button>
      </div>
     </div>
     <h3 class="text-3xl font-bold mt-20 mb-10 text-center">
-     Live Contests
+     লাইভ প্রতিযোগিতা
     </h3>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <h4 class="text-xl font-bold mb-2">
-       Live Contest 1
+       লাইভ কোডিং চ্যালেঞ্জ
       </h4>
       <p class="mb-2">
-       Live Rankings:
+       লাইভ র‌্যাঙ্কিং:
        <a class="text-blue-600 underline" href="#">
-        View
+        দেখুন
        </a>
       </p>
       <p class="mb-4">
-       Real-time feedback for participants.
+       অংশগ্রহণকারীদের জন্য রিয়েল-টাইম প্রতিক্রিয়া।
       </p>
      </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
+     <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow">
       <h4 class="text-xl font-bold mb-2">
-       Live Contest 2
+       লাইভ অ্যালগরিদম প্রতিযোগিতা
       </h4>
       <p class="mb-2">
-       Live Rankings:
-       <a class="text-blue-600 underline" href="#">
-        View
-       </a>
-      </p>
-      <p class="mb-4">
-       Real-time feedback for participants.
-      </p>
-     </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
-      <h4 class="text-xl font-bold mb-2">
-       Live Contest 3
-      </h4>
-      <p class="mb-2">
-       Live Rankings:
-       <a class="text-blue-600 underline" href="#">
-        View
-       </a>
-      </p>
-      <p class="mb-4">
-       Real-time feedback for participants.
-      </p>
-     </div>
-    </div>
-    <h3 class="text-3xl font-bold mt-20 mb-10 text-center">
-     Community Engagement
-    </h3>
-    <div class="p-6 bg-white rounded-lg shadow-lg">
-     <h4 class="text-xl font-bold mb-2">
-      Discuss Strategies
-     </h4>
-     <p class="mb-4">
-      Join the community to discuss strategies and share experiences related to contests.
-     </p>
-     <button class="bg-blue-600 text-white px-4 py-2 rounded">
-      Join Now
-     </button>
-    </div>
-   </div>
-  </section>
- </body>
-</html>
+       লাইভ র‌্যাঙ্কিং:
+       <
